@@ -1,0 +1,36 @@
+nav{
+    background-color: #111111;
+    overflow:hidden;
+    /* position:fixed; 
+    width:100%;
+    top:0; */
+    height: 50px;
+}
+nav > *{
+    background-color: #222222;
+    color:#dddddd;
+    transition:0.5s;
+    outline:none;
+    border:none;
+}
+nav > *:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+nav > *:active{
+    filter:invert(100%);
+}
+nav img:active{
+    filter: invert(100%);
+}
+nav > button{
+    float:right;
+    height: 100%;
+    border-radius: 0;
+}
+nav > a{
+    float: left;
+    line-height: 50px;
+    padding:0 20px;
+    text-align: center;
+}
