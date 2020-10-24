@@ -16,14 +16,32 @@
         </nav>
     </header>
     <main>
-        <h1>Projeto de PILC (em desenvolvimento)</h1>
+        <h1>Portal de Equações de 1° e 2° grau</h1>
         <p>
-            O conteúdo de matemática citado acima causa um grande medo nos alunos do ensino fundamental e médio, que
-            apresentam grandes dificuldades no aprendizado do mesmo. Nossa proposta inicial é mostrar exemplos de
-            resolução de exercícios, aplicações e até mesmo um modo interativo para auxílio na resolução de exercícios.
+            Uma equação é caracterizada por uma expressão algébrica com igualdade. Sua função é encontrar soluções para problemas onde temos um número desconhecido.
         </p>
-        <a href="test.html">here!</a>
+        <p>
+            Durante muito tempo na escola, foram usadas equações simples apenas, sempre era cobrado que se descobrisse o número à direita que está sempre isolado, não necessitando de nenhuma manipulação matemática para a resolução, apenas resolver as operações. Todas seguiam o formato <code>Operações = x</code>, onde as operações poderiam ser quaisquer desde que todos os números fossem conhecidos e deveríamos descobrir o valor de <code>x</code>. Um exemplo pode ser visto abaixo:
+        </p>
+        <div class="equacao" onclick="show_ans(0)">
+            <code>
+                3(34-8) + 24/4 = x
+                <div class="answer">
+                    <code>
+                        x = 84
+                    </code>
+                </div>
+            </code>
+        </div>
+        <p>
+            Claro que não era apresentado com um <code>x</code> à direita para não causar confusão nos alunos já que esse era o sinal utilizado para multiplicação. No lugar entraria um ? ou até mesmo deixaria em branco para que o aluno colque a resposta no local, mas basicamente eram os tipos de contas feitas por alunos do ensino fundamental até certo momento. Agora consideramos o exemplo abaixo:
+        </p>
+        <div class="equacao">
+            <code>8 + x/3 = 34 + 8/4</code>
+        </div>
+        <!-- <a href="test.html">here!</a> -->
     </main>
+    <script src="js/equacoes.js"></script>
     <script src="js/toggle-dark.js"></script>
 </body>
 

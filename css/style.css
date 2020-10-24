@@ -18,13 +18,38 @@ main{
 
 p{
     text-align: justify;
+    line-height: 1.5em;
 }
 
 a{
     text-decoration: none;
 }
 
+code{
+    background-color:#cccccc;
+    border-radius: 5px;
+    padding:3px 5px;
+}
+
+.equacao{
+    text-align: center;
+}
+.equacao:hover{
+    cursor: pointer;
+}
+.equacao code{
+    display: inline-block;
+}
+
+.answer{
+    display: none;
+}
+
 .dark-mode{
     background-color: #1e1e1e;
     color: #dddddd;
+}
+
+.dark-mode code{
+    background-color: #2e2e2e;
 }
