@@ -10,15 +10,27 @@
 <body>
     <header>
         <nav>
-            <button id="dark-mode-btn"><img src="img/dark-mode.png" alt="Dark Mode" height="30px"></button>
-            <a href="index.html">Home</a>
+            <a href="#">Home</a>
             <a href="doc/requisito.pdf">Levantamento de requisitos</a>
+            <button id="submenu-btn" onclick="openNav()"><span style="font-size: 30px;">&#9776;</span></button>
+            <button id="dark-mode-btn"><img src="img/dark-mode.png" alt="Dark Mode" height="30px"></button>
         </nav>
+        <div id="submenu" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Site Interessante</a>
+            <a href="test.html">Test</a>
+            <a id="rick" href="#">Referência Massa</a>
+        </div>
     </header>
     <main>
         <h1>Test multi-page dark mode</h1>
         <p>Success!?</p>
     </main>
+    <footer>
+        
+    </footer>
+    <script src="js/equacoes.js"></script>
+    <script src="js/sidenav.js"></script>
     <script src="js/toggle-dark.js"></script>
 </body>
 
