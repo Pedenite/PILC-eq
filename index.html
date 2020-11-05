@@ -11,15 +11,14 @@
     <header>
         <nav>
             <a href="#">Home</a>
-            <a href="doc/requisito.pdf">Levantamento de requisitos</a>
+            <a href="interativo.html">Faça você mesmo</a>
             <button id="submenu-btn" onclick="openNav()"><span style="font-size: 30px;">&#9776;</span></button>
             <button id="dark-mode-btn"><img src="img/dark-mode.png" alt="Dark Mode" height="30px"></button>
         </nav>
         <div id="submenu" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Site Interessante</a>
-            <a href="test.html">Test</a>
-            <a id="rick" href="#">Referência Massa</a>
+            <a href="doc/requisito.pdf">Levantamento de<br>requisitos</a>
+            <a id="rick" href="#">Site interessante</a>
         </div>
     </header>
     <main>
@@ -61,8 +60,23 @@
             ensino fundamental até certo momento. Agora consideremos o exemplo abaixo (Dica: é possível clicar na
             expressão para ver uma solução detalhada):
         </p>
-        <div class="equacao">
-            <code>8 + x/3 = 34 + 8/4</code>
+        <div class="equacao" onclick="show_ans(1)">
+            <code>8 + x/3 = 34 + 8/4
+                <div class="answer">
+                    <table>
+                    <tr>
+                        <td class="eq">x/3 = 26 + 2</td>
+                        <td class="explanation">Subtraímos ambos os lados por 8 para isolar x</td>
+                    </tr>
+                        <td class="eq">x = 28*3</td>
+                        <td class="explanation">Continuamos a resolução seguindo a ordem dos operadores e multiplicamos os dois lados por 3</td>
+                    <tr>
+                        <td class="eq">x = 84</td>
+                        <td class="explanation">Obtemos a resposta com o x isolado</td>
+                    </tr>
+                    </table>
+                </div>
+            </code>
         </div>
         <!-- <a href="test.html">here!</a> -->
     </main>
