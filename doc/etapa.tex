@@ -14,6 +14,7 @@
 \usepackage{hyperref}
 \usepackage{lipsum}
 \usepackage{xcolor}
+\usepackage{float}
 
 % \pagecolor[rgb]{0.1,0.1,0.1}
 % \color[rgb]{0.9,0.9,0.9}
@@ -68,20 +69,60 @@
 \newpage
 
 \chapter{Introdução}
-Durante o processo de desenvolvimento no raciocínio matemático, podem existir diversas falhas, tanto do lado do professor quanto do aluno, ou até mesmo do material didático. Por isso é de extrema importância o surgimento de novas ferramentas para auxiliar tanto o professor quanto os alunos.
+Na matemática entendemos equação como, uma expressão algébrica que possui uma incógnita representada por uma letra (notações mais usadas são: x,y,z,w), e foi criada há muito tempo atrás para a solução de problemas quando o número é desconhecido. As equações de primeiro (onde o expoente da incógnita é igual a 1) e segundo grau  (onde o expoente da incógnita é igual a 2), desenvolvem um papel muito importante na rotina de alunos e professores, mas que muitas das vezes essas matérias acabam sendo passadas de forma tradicional e mecânica, que pode acabar interferindo na assimilação do conteúdo.
 
-Nosso trabalho será focado para as turmas do início do ensino médio, na disciplina de matemática, mais especificamente na matéria de equações (primeiro e segundo grau), pois essa é a matéria que muitos alunos apresentam dificuldades na hora de aprender e é importantíssima para outras matérias como física e química. Nosso software vai mostrar passo a passo de como resolver alguns exercícios dessas equações, além de mostrar os gráficos para o aluno assimilar mais facilmente a matéria.
+As equações são muito utilizadas no ensino fundamental (onde são ensinadas), caso o aluno não consiga assimilar a matéria, terá muitas dificuldades, pois, este mesmo conteúdo é usado no  nível médio e superior. Esse trabalho é desenvolvido com a finalidade de mostrar uma forma alternativa de passar esses conteúdos utilizando ferramentas que mostrem outras formas de apresentar a mesma matéria. Nossa ideia foi desenvolver um software onde o aluno possa escrever a equação desejada e ver a resolução da questão mostrando o passo a passo. 
 
-\chapter{Detalhamento}
+\chapter{Problema}
+É  comum atualmente muitos professores usarem metodologias tradicionais (onde o professor é o centro do processo de ensino aprendizagem), e isso acaba afetando todos os alunos que não conseguem se encaixar neste sistema. A tecnologia poderia auxiliar tanto os professores quanto os alunos, pois com o auxílio da tecnologia poderiam ser criadas muitas ferramentas para cada tipo de pessoa, alguns ferramentas com mais textos, imagens, vídeo aulas específicas, ou até mesmo jogos, questionários, etc.
+
 A dificuldade na resolução de equações ao longo do período escolar é natural e se torna presente em muitos alunos, que acabam por perder todo o interesse pela matéria, em especial quando não conseguem encontrar uma aplicabilidade para elas. A baixa capacidade de resolução de equações pode afetar negativamente o desempenho em matérias como física, química e a própria matemática, em que este conteúdo é usado o tempo todo e qualquer pequeno erro já faz com que o aluno perca toda uma questão. O projeto tem como finalidade, a descomplicação do conteúdo por meio de um \textit{website}.
 
-Serão usadas as ferramentas HTML, CSS e Javascript para o desenvolvimento do portal que será composto apenas de \textit{front-end} e será versionado no \href{https://github.com/Pedenite/PILC-eq}{github}, onde também será feito o \textit{deploy} por meio do \href{https://pedenite.github.io/PILC-eq/}{github-pages}. Dentre o conteúdo do portal, teremos explicações da matéria considerando o público-alvo, que são jovens de 14 a 18 anos, exemplos de exercícios que vão variar desde os mais simples aos mais complexos e aplicações para proporcionar um entendimento melhor da matéria ao incluir gráficos e interdisciplinarizar com a física por exemplo e até coisas do mundo real.
+\chapter{Protótipo}
+O software em desenvolvimento é, de certa forma inspirado no \href{https://pt.symbolab.com/}{Symbolab} e no Photomath que são "calculadoras" avançadas que mostram a resolução passo a passo dos exercícios desde os mais simples até os mais avançados com até matérias do ensino superior. O portal será composto de uma página com a explicação do conteúdo e outra com o modo de calculadora para a resolução de exercícios.
 
-\chapter{Trabalhos Relacionados e Conclusão}
-Existem softwares na internet com uma proposta bem similar, como exemplo temos o \href{https://pt.symbolab.com/}{Symbolab} que permite que o usuário digite equações para que seja mostrada a solução detalhada passo a passo para o problema. Porém a ferramenta possui limitação no plano gratuito e não mostra todos os passos para a resolução, mas ela atende problemas mais avançados também como matérias estudadas no ensino superior.
+\section{Conteúdo}
+A atual página principal do portal possui o início do que será a explicação do conteúdo, com exemplos de problemas resolvidos com a opção de clicar em cima para mostrar o passo a passo da resolução da equação se o usuário quiser tentar resolver antes por si só.
 
-Outro exemplo de um trabalho é o photomath. Trata-se de um aplicativo para smartphones que permite ao usuário apontar a câmera do celular em uma equação matemática e ele assume a responsabilidade de resolver mostrando gráfico, passos para resolução, entre outros. O aplicativo, além de resolver os problemas básicos de equações, também resolve funções mais complexas assim como o site citado acima.
+\begin{figure}[H]
+    \includegraphics[width=1\textwidth]{img/home.png}
+    \caption{Esboço da tela "Home" com as resoluções abertas}
+\end{figure}
 
-A aplicação de interdisciplinaridade nos conteúdos de matemática já é usada há tempos em universidades em matérias como cálculo de forma a facilitar o entendimento e, principalmente fazer os alunos entenderem o "para quê" do conteúdo e não somente como resolver o problema, o que pode proporcionar um maior interesse pela matéria e fazer com que o conteúdo seja melhor fixado pelos alunos. Nosso objetivo é parecido neste sentido com a adição de ser um portal facilmente acessível pela internet para que qualquer um possa aprender.
+O portal atualmente possui um "dark mode" para agradar a todo tipo de público que pode ser ativado/desativado pelo botão na barra de navegação que tem um símbolo que lembra uma lua.
+
+\begin{figure}[H]
+    \includegraphics[width=1\textwidth]{img/dark-mode.png}
+    \caption{Esboço da tela "Home" com o modo escuro ativado e sem as resoluções dos exercícios abertas}
+\end{figure}
+
+Podemos ver na barra de navegação que temos outras opções também. Entre elas, mais à esquerda temos a "home", que é a página atual, ou seja, não servirá no contexto atual. Logo ao lado, temos a opção "Faça você mesmo" que é um link que leva à página que será usada para a resolução de exercícios informados pelo usuário. Mais à direita, temos o modo escuro como informado acima, e logo ao lado, temos um menu "sanduíche", que abre uma aba de navegação lateral para a inserção de outros links úteis.
+
+\section{Exercícios}
+Temos a segunda página que pode ser acessada pelo link informado acima "Faça você mesmo" que contém a seção de fazer os exercícios que podem ser informados pelo usuário. A tela consiste basicamente de um "input" de texto onde será informada uma equação e abaixo será mostrada a resposta ao clicar no botão.
+
+\begin{figure}[H]
+    \includegraphics[width=1\textwidth]{img/interativo.png}
+    \caption{Esboço da tela tela de exercícios}
+\end{figure}
+
+Assim como na página principal, o dark mode funciona nas demais páginas também, como é possível ver abaixo:
+
+\begin{figure}[H]
+    \includegraphics[width=1\textwidth]{img/interativo-dm.png}
+    \caption{Esboço da tela de exercícios com o modo escuro ativado}
+\end{figure}
+
+Assim como na página principal, temos um submenu que pode ser acessado pelo ícone do "menu sanduíche", onde ficarão links úteis como este documento e o levantamento de requisitos.
+
+\begin{figure}[H]
+    \includegraphics[width=1\textwidth]{img/submenu.png}
+    \caption{Esboço da tela com o submenu lateral aberto}
+\end{figure}
+
+O portal está em desenvolvimento e poderá mudar com o tempo e até serem adicionadas novas páginas. O esboço atual é o básico do layout que o projeto seguirá. Para acessr a versão mais recente do portal, pode ser usado o seguinte link: \url{https://pedenite.github.io/PILC-eq/}.
+
+\chapter{Conclusão}
+Podemos perceber que cada aluno possui sua maneira de estudar e assimilar os conteúdos passados e com o auxílio das ferramentas tecnológicas cada pessoa pode escolher uma que ajude a entender a matéria mais facilmente.
 
 \end{document}
