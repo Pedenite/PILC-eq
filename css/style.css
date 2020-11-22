@@ -1,3 +1,22 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background:#111
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #411; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
 html{
     font-family: 'Ubuntu', sans-serif;
     width: 100%;
@@ -5,7 +24,11 @@ html{
 
 body{
     width:100%;
-    margin:auto;
+    margin:0;
+}
+
+.content {
+    min-height: 85vh;
 }
 
 header{
@@ -66,4 +89,11 @@ code{
 
 .dark-mode code{
     background-color: #2e2e2e;
+}
+
+footer {
+    margin-top: 5vh;
+    background-color: #111111;
+    height: 10vh;
+    color: #dddddd;
 }

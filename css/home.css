@@ -1,7 +1,8 @@
 body {
     margin: 0;
-    color: #dddddd;;
-    background-image: linear-gradient(#441111, #111111);
+    color: #dddddd;
+    background-color: #441111;
+    background-image: linear-gradient(to bottom right, #441111, #111111), linear-gradient(to right, #441111, rgb(158, 76, 0));
     width: 100%;
     min-height: 100vh;
 }
@@ -13,14 +14,14 @@ body {
 
 .titulo {
     text-align: center;
-    font-size: 10vh;
+    font-size: 5em;
     font-family: VALORANT;
 }
 
 .bckgnd::after {
     content: "";
     background: url(../img/capa.jpg);
-    opacity: 0.3;
+    opacity: 0.1;
     margin: 0;
     padding: 0;
     top: 0;
@@ -37,4 +38,29 @@ body {
     max-width: 100%;
     display: block;
     margin: auto;
+}
+
+.links-container{
+    display:flex;
+}
+
+.link-item {
+    background-image: radial-gradient(#441111 50%, #111111);
+    border-radius: 10px;
+    display: inline-block;
+    width: 45%;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    color:#dddddd;
+    font-size: 1.5em;
+    white-space: nowrap;
+}
+#link1 {
+    margin-right: 10%;
+}
+
+.link-item:hover {
+    background-image: radial-gradient(#441111 50%, rgb(31, 20, 0));
+    transition: 1s;
 }
