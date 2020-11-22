@@ -1,5 +1,5 @@
 nav{
-    background-color: #111111;
+    background-color: #331111;
     overflow:hidden;
     /* position:fixed; 
     width:100%;
@@ -7,7 +7,7 @@ nav{
     height: 50px;
 }
 nav > *{
-    background-color: #222222;
+    background-color: #441111;
     color:#dddddd;
     transition:0.3s;
     outline:none;
@@ -42,7 +42,7 @@ nav > a{
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #111;
+    background-color: #331111;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;

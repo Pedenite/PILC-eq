@@ -6,26 +6,18 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/icon.png"/>
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono&family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="interativo.html">Faça você mesmo</a>
-            <button id="submenu-btn" onclick="openNav()"><span style="font-size: 30px;">&#9776;</span></button>
-            <button id="dark-mode-btn"><img src="img/dark-mode.png" alt="Dark Mode" height="30px"></button>
-        </nav>
-        <div id="submenu" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="doc/requisito.pdf">Levantamento de<br>requisitos</a>
-            <a href="doc/etapa.pdf">Etapa de projeto</a>
-            <a id="rick" href="#">Site interessante</a>
-        </div>
+        
     </header>
     <main>
-        <h1>Portal de Equações de 1° e 2° grau</h1>
+    <div class="bckgnd">
+        <h1 class="titulo">Equações</h1>
+        <img class="capa" src="img/capa.webp">
         <p>
             Uma equação é caracterizada por uma expressão algébrica com igualdade. Sua função é encontrar soluções para
             problemas onde temos um número desconhecido.
@@ -37,51 +29,7 @@
             operações poderiam ser quaisquer desde que todos os números fossem conhecidos e deveríamos descobrir o valor
             de <code>x</code>. Um exemplo pode ser visto abaixo:
         </p>
-        <div class="equacao" onclick="show_ans(0)">
-            <code>
-                3*(34-8) + 24/4 = x
-                <div class="answer">
-                    <table>
-                    <tr>
-                        <td class="eq">3*26 + 6 = x</td>
-                        <td class="explanation">Respeitamos a ordem das operações</td>
-                    </tr>
-                        <td class="eq">78 + 6 = x</td>
-                        <td class="explanation">Continuamos a resolução seguindo a ordem</td>
-                    <tr>
-                        <td class="eq">x = 84</td>
-                        <td class="explanation">Apenas invertemos o resultado final com x</td>
-                    </tr>
-                    </table>
-                </div>
-            </code>
-        </div>
-        <p>
-            Claro que não era apresentado com um <code>x</code> à direita para não causar confusão nos alunos já que
-            esse era o sinal utilizado para multiplicação. No lugar entraria um ? ou até mesmo deixaria em branco para
-            que o aluno colocasse a resposta no local, mas basicamente eram os tipos de contas feitas por alunos do
-            ensino fundamental até certo momento. Agora consideremos o exemplo abaixo (Dica: é possível clicar na
-            expressão para ver uma solução detalhada):
-        </p>
-        <div class="equacao" onclick="show_ans(1)">
-            <code>8 + x/3 = 34 + 8/4
-                <div class="answer">
-                    <table>
-                    <tr>
-                        <td class="eq">x/3 = 26 + 2</td>
-                        <td class="explanation">Subtraímos ambos os lados por 8 para isolar x</td>
-                    </tr>
-                        <td class="eq">x = 28*3</td>
-                        <td class="explanation">Continuamos a resolução seguindo a ordem dos operadores e multiplicamos os dois lados por 3</td>
-                    <tr>
-                        <td class="eq">x = 84</td>
-                        <td class="explanation">Obtemos a resposta com o x isolado</td>
-                    </tr>
-                    </table>
-                </div>
-            </code>
-        </div>
-        <!-- <a href="test.html">here!</a> -->
+    </div>
     </main>
     <footer>
         
