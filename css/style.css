@@ -93,7 +93,26 @@ code{
 
 footer {
     margin-top: 5vh;
+    padding: 1vh 10%;
     background-color: #111111;
+    min-height: 10vh;
+    color: #555555;
+}
+footer img {
+    float:left;
     height: 10vh;
-    color: #dddddd;
+    margin-right: 10px;
+    opacity: 0.1;
+}
+footer h3 {
+    margin:10px 0 0 0;
+}
+footer p {
+    margin: 0;
+}
+footer a {
+    color:#555555;
+}
+footer a:hover {
+    text-decoration: underline;
 }

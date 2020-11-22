@@ -34,15 +34,6 @@ nav > a{
     padding:0 20px;
     text-align: center;
 }
-@media (max-width: 1000px){
-    nav {
-        height: 5vh;
-    }
-    nav > a {
-        line-height: 5vh;
-        padding: 0 4vh;
-    }
-}
 
 .sidenav {
     height: 100%;
