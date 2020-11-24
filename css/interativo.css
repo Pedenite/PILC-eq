@@ -34,11 +34,15 @@
     background-color: #dddddd;
     color:black;
     font-size: large;
-    min-height: 50vh;
+    min-height: 40vh;
     padding: 15px
 }
 
 .dark-mode #equacao, .dark-mode #resul-eq {
     background-color: #2e2e2e;
     color: #dddddd;
+}
+
+#dica-eq{
+    cursor: pointer;
 }

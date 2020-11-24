@@ -1,7 +1,13 @@
 let ultimoValue = ''
 let equacaoField = document.getElementById("equacao")
+let equacaoDica = document.getElementById("dica-eq")
+
+equacaoDica.addEventListener("click", function(){
+    equacaoDica.style.display = "none"
+})
 
 function updateEquacao() {
+    equacaoField.value = equacaoField.value.replaceAll("X", "x")
     if (new RegExp('^[0-9 x = + * ) ^ ( / -]{0,}$').test(equacaoField.value)) {
         ultimoValue = equacaoField.value
     } else {
@@ -32,6 +38,13 @@ function resolver() {
 
     functionPlot({
         target: '#grafico',
+        xAxis: {
+            label: 'x'
+        },
+        yAxis: {
+            label: 'y, f(x)'
+        },
+        grid: true,
         data: [{
             fn: funcao, color: '#441111'
         }]
@@ -40,10 +53,15 @@ function resolver() {
 
 function formatEq(equacao, grau2) {
     let funcao = equacao.replaceAll(" ", "").split("=")[1]
+
+    if(grau2 && !funcao.includes(",")){
+        funcao = `${funcao},${funcao}`
+    }
+
     if (funcao.includes(",")) {
         funcao = funcao.split(",")
-        const a = funcao[0]
-        const b = funcao[1]
+        let a = eval(funcao[0])
+        let b = eval(funcao[1])
         const s = a + b
         const p = a * b
         funcao = `x^2 - (${s})x + (${p})`
