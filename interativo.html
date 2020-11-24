@@ -32,7 +32,7 @@
         <main>
             <h1>Monte a Sua Equação</h1>
             <form action="javascript:resolver()">
-                <input id="equacao" type="text" placeholder="x = 0">
+                <input id="equacao" type="text" placeholder="x = 0" oninput="updateEquacao()">
                 <input id="submit-eq" type="submit" value="Enviar">
             </form>
             <div id="resul-eq">

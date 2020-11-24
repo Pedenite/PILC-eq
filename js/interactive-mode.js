@@ -1,13 +1,24 @@
-function resolver(){
-    let equacao = document.getElementById("equacao").value
+let ultimoValue = ''
+let equacaoField = document.getElementById("equacao")
+
+function updateEquacao() {
+    if (new RegExp('^[0-9 x = + * ) ^ ( / -]{0,}$').test(equacaoField.value)) {
+        ultimoValue = equacaoField.value
+    } else {
+        equacaoField.value = String(ultimoValue)
+    }
+}
+
+function resolver() {
+    let equacao = equacaoField.value
     const grau2 = equacao.replaceAll(" ", "").includes("x^2")
     const result = document.getElementById("solution")
     let funFormatada = ""
-    if(!equacao){
+    if (!equacao) {
         equacao = "x = 0"
         funFormatada = "x"
-    } else if(!equacao.includes("=")){
-        if(equacao.includes("x")){
+    } else if (!equacao.includes("=")) {
+        if (equacao.includes("x")) {
             funFormatada = equacao
             equacao = `${equacao} = 0`
         } else {
@@ -22,21 +33,21 @@ function resolver(){
     functionPlot({
         target: '#grafico',
         data: [{
-            fn: funcao, color:'#441111'
+            fn: funcao, color: '#441111'
         }]
     })
 }
 
-function formatEq(equacao, grau2){
+function formatEq(equacao, grau2) {
     let funcao = equacao.replaceAll(" ", "").split("=")[1]
-    if(funcao.includes(",")){
+    if (funcao.includes(",")) {
         funcao = funcao.split(",")
         const a = funcao[0]
         const b = funcao[1]
-        const s = a+b
-        const p = a*b
+        const s = a + b
+        const p = a * b
         funcao = `x^2 - (${s})x + (${p})`
-    } else if(grau2){
+    } else if (grau2) {
         funcao = 'x^2'
     } else {
         funcao = `x - (${funcao})`
