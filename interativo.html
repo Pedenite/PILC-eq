@@ -1,40 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang=”pt-br”>
 
 <head>
-    <title>Equações de 1 e 2 grau</title>
-    <link rel="shortcut icon" type="image/x-icon" href="img/icon.png"/>
+    <meta charset=”UTF-8”>
+    <title>Equações</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon.png" />
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/interativo.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono&family=Ubuntu&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="content">
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="exercicio.html">Exercícios</a>
-            <a href="#">Faça você mesmo</a>
-            <button id="submenu-btn" onclick="openNav()"><span style="font-size: 30px;">&#9776;</span></button>
-            <button id="dark-mode-btn"><img src="img/dark-mode.png" alt="Dark Mode" height="30px"></button>
-        </nav>
-        <div id="submenu" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="doc/requisito.pdf">Levantamento de<br>requisitos</a>
-            <a href="doc/etapa.pdf">Etapa de projeto</a>
-            <a id="rick" href="#">Site interessante</a>
-        </div>
-    </header>
-    <main>
-        <h1>Monte a Sua Equação</h1>
-        <form action="javascript:resolver()">
-            <input id="equacao" type="text" placeholder="x = 0">
-            <input id="submit-eq" type="submit">
-        </form>
-        <div id="resul-eq"></div>
-    </main>
+        <header>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="exercicio.html">Exercícios</a>
+                <a href="#">Faça você mesmo</a>
+                <button id="submenu-btn" onclick="openNav()"><span style="font-size: 30px;">&#9776;</span></button>
+                <button id="dark-mode-btn"><img src="img/dark-mode.png" alt="Dark Mode" height="30px"></button>
+            </nav>
+            <div id="submenu" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="doc/requisito.pdf">Levantamento de<br>requisitos</a>
+                <a href="doc/etapa.pdf">Etapa de projeto</a>
+                <a id="rick" href="#">Site interessante</a>
+            </div>
+        </header>
+        <main>
+            <h1>Monte a Sua Equação</h1>
+            <form action="javascript:resolver()">
+                <input id="equacao" type="text" placeholder="x = 0">
+                <input id="submit-eq" type="submit" value="Enviar">
+            </form>
+            <div id="resul-eq">
+                <div id="grafico" style="float: right;"></div>
+                <p id="solution" style="white-space: nowrap;"></p>
+            </div>
+        </main>
     </div>
     <footer>
         <img src="img/logo.png">
@@ -43,10 +48,15 @@
                 href="https://github.com/Pedenite/PILC-eq">Github</a></p>
         <p>UnB 2020/1 - Projeto Interdisciplinar de Licenciatura em Computação</p>
     </footer>
+    <script src="js/toggle-dark.js"></script>
+    <script src="https://unpkg.com/function-plot/dist/function-plot.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nerdamer@latest/nerdamer.core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nerdamer@latest/Algebra.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nerdamer@latest/Calculus.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nerdamer@latest/Solve.js"></script>
     <script src="js/equacoes.js"></script>
     <script src="js/interactive-mode.js"></script>
     <script src="js/sidenav.js"></script>
-    <script src="js/toggle-dark.js"></script>
 </body>
 
 </html>

@@ -17,7 +17,3 @@ function closeNav() {
     document.querySelector("main").style.paddingRight = "0"
     document.querySelector("nav").style.marginRight = "0"
 }
-
-document.getElementById("rick").addEventListener("click", function(){
-    window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");    
-})
