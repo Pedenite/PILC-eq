@@ -35,7 +35,8 @@
     color:black;
     font-size: large;
     min-height: 40vh;
-    padding: 15px
+    padding: 15px;
+    overflow: auto;
 }
 
 .dark-mode #equacao, .dark-mode #resul-eq {

@@ -60,7 +60,8 @@ code{
 }
 
 .equacao{
-    text-align: center;
+    /* text-align: center; */
+    margin-bottom: 20px;
 }
 .equacao:hover{
     cursor: pointer;
