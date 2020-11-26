@@ -8,7 +8,7 @@ equacaoDica.addEventListener("click", function(){
 
 function updateEquacao() {
     equacaoField.value = equacaoField.value.replace("X", "x")
-    if (new RegExp('^[0-9 x = + * ) ^ ( / -]{0,}$').test(equacaoField.value)) {
+    if (new RegExp('^[0-9 x = + * ) ^ ( / . -]{0,}$').test(equacaoField.value)) {
         ultimoValue = equacaoField.value
     } else {
         equacaoField.value = String(ultimoValue)
@@ -16,8 +16,8 @@ function updateEquacao() {
 }
 
 function resolver() {
-    let equacao = equacaoField.value
-    const grau2 = equacao.replace(" ", "").includes("x^2")
+    let equacao = equacaoField.value.replace(/ /g,'')
+    const grau2 = equacao.includes("x^2")
     const result = document.getElementById("solution")
     let funFormatada = ""
     if (!equacao) {
@@ -52,7 +52,7 @@ function resolver() {
 }
 
 function formatEq(equacao, grau2) {
-    let funcao = equacao.replace(" ", "").split("=")[1]
+    let funcao = equacao.split("=")[1]
 
     if(grau2 && !funcao.includes(",")){
         funcao = `${funcao},${funcao}`

@@ -15,6 +15,7 @@
     <header>
         <nav>
             <a href="index.html">Home</a>
+            <a href="conteudo.html">Conteúdo</a>
             <a href="#">Exercícios</a>
             <a href="interativo.html">Faça você mesmo</a>
             <button id="submenu-btn" onclick="openNav()"><span style="font-size: 30px;">&#9776;</span></button>
@@ -29,16 +30,12 @@
     <main>
         <h1>Exercícios</h1>
         <hr>
-        <h2 id="eq1">Equações do 1° grau</h1>
-        <p>
-            Uma equação do primeiro grau é uma equação que segue a forma <code>ax+b = 0</code>, sendo que <code>a</code> e <code>b</code> podem ser quaisquer números conhecidos ou expressões que resultem em um número conhecido, enquanto <code>x</code> é a incógnita que deve ter seu valor encontrado. Como é possível ver pela forma padrão da equação de primeiro grau, a incógnita pode ser multiplicada, dividida, subtraída e adicionada a qualquer número. Porém, não pode conter operações de potenciação ou radiciação aplicadas diretamente em <code>x</code>, pois isso muda o grau da equação.
-        </p>
-        <h3>Vídeo Explicativo</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ylvb03POwGE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+        <h2 id="eq1">Equações do 1° grau</h2>
+        
         <h3>Resolva as Questões Abaixo:</h3>
-        <p>Dica: É possível abrir a questão para encontrar a solução</p>
+        <p>Dica: É possível abrir a questão para visualizar a solução</p>
         <div class="equacao" onclick="show_ans(0)">
+            <b>a) </b>
             <code>
                 3*(34-8) + 24/4 = x
                 <div class="answer">
@@ -58,18 +55,71 @@
             </code>
         </div>
         <div class="equacao" onclick="show_ans(1)">
+            <b>b) </b>
             <code>8 + x/3 = 34 + 8/4
                 <div class="answer">
                     <table>
                     <tr>
                         <td class="eq">x/3 = 26 + 2</td>
                         <td class="explanation">Subtraímos ambos os lados por 8 para isolar x</td>
-                    </tr>
+                    </tr><tr>
                         <td class="eq">x = 28*3</td>
                         <td class="explanation">Continuamos a resolução seguindo a ordem dos operadores e multiplicamos os dois lados por 3</td>
-                    <tr>
+                    </tr><tr>
                         <td class="eq">x = 84</td>
                         <td class="explanation">Obtemos a resposta com o x isolado</td>
+                    </tr>
+                    </table>
+                </div>
+            </code>
+        </div>
+        <div class="equacao" onclick="show_ans(2)">
+            <b>c) </b>
+            <code>4x + 12 = 0
+                <div class="answer">
+                    <table>
+                    <tr>
+                        <td class="eq">4x = -12</td>
+                    </tr><tr>
+                        <td class="eq">x = -12/4</td>
+                    </tr><tr>
+                        <td class="eq">x= -3</td>
+                    </tr>
+                    </table>
+                </div>
+            </code>
+        </div>
+        <div class="equacao" onclick="show_ans(3)">
+            <b>d) </b>
+            <code>5x - 6 = 2x + 3
+                <div class="answer">
+                    <table>
+                    <tr>
+                        <td class="eq">5x - 2x = +9</td>
+                    </tr><tr>
+                        <td class="eq">x = 9/3</td>
+                    </tr><tr>
+                        <td class="eq">x = 3</td>
+                    </tr>
+                    </table>
+                </div>
+            </code>
+        </div>
+        <div class="equacao" onclick="show_ans(4)">
+            <b>e) </b>
+            <code>(x+2)/3 = (2x+1)/5
+                <div class="answer">
+                    <table>
+                    <tr>
+                        <td class="eq">5(x+2) = 3(2x+1)</td>
+                    </tr><tr>
+                        <td class="eq">5x + 10 = 6x + 3</td>
+                    </tr><tr>
+                        <td class="eq">5x - 6x = -(+3) - 10</td>
+                    </tr><tr>
+                        <td class="eq">-x = -7</td>
+                    </tr><tr>
+                        <td class="eq">x = 7</td>
                     </tr>
                     </table>
                 </div>
@@ -78,12 +128,76 @@
 
         <hr>
         <h2 id="eq2">Equações do 2° grau</h2>
-        <p>
-            Uma equação do segundo grau é uma equação que segue a forma <code>ax^2 + bx + c = 0</code>, sendo <code>a</code>, <code>b</code> e <code>c</code>, números ou expressões conhecidas, enquanto <code>x</code> é a incógnita que deve ser encontrada.
-
-        </p>
-        <h3>Vídeo Explicativo</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/iMTcN--jfHM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        <h3>Resolva as Questões Abaixo:</h3>
+        <p>Dica: É possível abrir a questão para visualizar a solução</p>
+        <div class="equacao" onclick="show_ans(5)">
+            <b>a) </b>
+            <code>
+                5x^2 - 3x - 2 = 0
+                <div class="answer">
+                    <table>
+                    <tr>
+                        <td class="eq">a= 5 b=-3 c=-2</td>
+                        <td class="explanation">Obtemos os valores de 'a', 'b' e 'c' a partir da equação</td>
+                    </tr><tr>
+                        <td class="eq">Δ = b^2 - 4ac</td>
+                        <td class="explanation">Vamos aplicar os valores nesta fórmula para obter delta</td>
+                    </tr><tr>
+                        <td class="eq">Δ = (-3)^2 - 4*5*(-2)</td>
+                        <td class="explanation">Ficaremos com esta expressão</td>
+                    </tr><tr>
+                        <td class="eq">Δ = 9 -20*(-2)</td>
+                        <td class="explanation">Desenvolvemos as operações</td>
+                    </tr><tr>
+                        <td class="eq">Δ = 9 + 40</td>
+                        <td class="explanation">Desenvolvemos as operações</td>
+                    </tr><tr>
+                        <td class="eq">Δ = 49</td>
+                        <td class="explanation">Obtemos o resultado de delta</td>
+                    </tr><tr>
+                        <td class="eq">x1 = -b + √(Δ)/2a e x2 = -b - √(Δ)/2a</td>
+                        <td class="explanation">Vamos aplicar os valores nesta fórmula para obter as raízes da equação</td>
+                    </tr><tr>
+                        <td class="eq">x' = -(-3) + √(49)/10 e x" = -(-3) - √(49)/10</td>
+                        <td class="explanation">Substituindo os valores na fórmula</td>
+                    </tr><tr>
+                        <td class="eq">x' = 3 + 7/10 e x" = 3 - 7/10</td>
+                        <td class="explanation">Resolvemos as operações em partes</td>
+                    </tr><tr>
+                        <td class="eq">x' =  1 e x" = - 4/10</td>
+                        <td class="explanation">Encontramos as raízes da equação</td>
+                    </tr>
+                    </table>
+                </div>
+            </code>
+        </div>
+        <div class="equacao" onclick="show_ans(6)">
+            <b>b) </b>
+            <code>x^2 - 6x + 5 = 0
+                <div class="answer">
+                    <table>
+                    <tr>
+                        <td class="eq">a= 1 b=-6 c=5</td>
+                    </tr><tr>
+                        <td class="eq">Δ = (-6)^2 - 4*1*(5)</td>
+                    </tr><tr>
+                        <td class="eq">Δ = +36 - 4 - 1*(5) ou Δ = +36 + 4 - 1*(5)</td>
+                    </tr><tr>
+                        <td class="eq">Δ = 36 - 20</td>
+                    </tr><tr>
+                        <td class="eq">Δ = 16</td>
+                    </tr><tr>
+                        <td class="eq">x' = -(-6) + √(16)/2 e x" = -(-6) -√(16)/2</td>
+                    </tr><tr>
+                        <td class="eq">x' = 6 + 4/2 e x" = 6 - 4/2</td>
+                    </tr><tr>
+                        <td class="eq">x' = 5 e x" = 1</td>
+                    </tr>
+                </table>
+                </div>
+            </code>
+        </div>
     </main>
     </div>
     <footer>

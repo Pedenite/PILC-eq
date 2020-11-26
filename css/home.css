@@ -56,8 +56,9 @@ body {
     font-size: 1.5em;
     white-space: nowrap;
 }
-#link1 {
-    margin-right: 10%;
+#link-middle {
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .link-item:hover {

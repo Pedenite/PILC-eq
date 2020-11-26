@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang=”pt-br”>
+
+<head>
+    <meta charset=”UTF-8”>
+    <title>Equações</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon.png"/>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="content">
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Conteúdo</a>
+            <a href="exercicio.html">Exercícios</a>
+            <a href="interativo.html">Faça você mesmo</a>
+            <button id="submenu-btn" onclick="openNav()"><span style="font-size: 30px;">&#9776;</span></button>
+            <button id="dark-mode-btn"><img src="img/dark-mode.png" alt="Dark Mode" height="30px"></button>
+        </nav>
+        <div id="submenu" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="doc/requisito.pdf">Levantamento de<br>requisitos</a>
+            <a href="doc/etapa.pdf">Etapa de projeto</a>
+        </div>
+    </header>
+    <main>
+        <h1>Conteúdo</h1>
+        <hr>
+        <h2 id="eq1">Equações do 1° grau</h1>
+        <p>
+            Uma equação do primeiro grau é uma equação que segue a forma <code>ax+b = 0</code>, sendo que <code>a</code> e <code>b</code> podem ser quaisquer números conhecidos ou expressões que resultem em um número conhecido, enquanto <code>x</code> é a incógnita que deve ter seu valor encontrado. Como é possível ver pela forma padrão da equação de primeiro grau, a incógnita pode ser multiplicada, dividida, subtraída e adicionada a qualquer número. Porém, não pode conter operações de potenciação ou radiciação aplicadas diretamente em <code>x</code>, pois isso muda o grau da equação.
+        </p>
+        <h3>Vídeo Explicativo</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ylvb03POwGE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h2 id="eq2">Equações do 2° grau</h2>
+        <p>
+            Uma equação do segundo grau é uma equação que segue a forma <code>ax^2 + bx + c = 0</code>, sendo <code>a</code>, <code>b</code> e <code>c</code>, números ou expressões conhecidas, enquanto <code>x</code> é a incógnita que deve ser encontrada. Assim como no primeiro grau, a incógnita pode realizar qualquer operação básica com números quaisquer, exceto potenciação e radiciação. Porém para ser considerada uma equação do segundo grau, deve possuir a incógnita elevada ao quadrado em algum lugar, ou seja <code>a</code> não pode ser 0.
+
+        </p>
+        <h3>Vídeo Explicativo</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/iMTcN--jfHM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h3>Fórmula de Bhaskara</h3>
+        <p>Como abordado no vídeo, precisamos da fórmula de bhaskara para a resolução:</p>
+        <img id="bhaskara" src="img/bhaskara.png">
+    </main>
+    </div>
+    <footer>
+        <img src="img/logo.png">
+        <h3>Portal de Equações</h3>
+        <p>Este software é open source, com código-fonte disponível no <a
+                href="https://github.com/Pedenite/PILC-eq">Github</a></p>
+        <p>UnB 2020/1 - Projeto Interdisciplinar de Licenciatura em Computação</p>
+    </footer>
+    <script src="js/toggle-dark.js"></script>
+    <script src="js/sidenav.js"></script>
+</body>
+
+</html>

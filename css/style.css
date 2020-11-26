@@ -117,3 +117,13 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+#bhaskara {
+    display:block;
+    width: 300px;
+    margin-left:auto;
+    margin-right: auto;
+}
+.dark-mode #bhaskara {
+    filter: invert(100%);
+}
