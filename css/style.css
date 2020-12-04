@@ -127,3 +127,8 @@ footer a:hover {
 .dark-mode #bhaskara {
     filter: invert(100%);
 }
+
+img {
+    display: block;
+    margin: auto;
+}
