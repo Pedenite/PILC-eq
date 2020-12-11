@@ -1,3 +1,12 @@
+.main-video-container {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+    margin-top: 15px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
 .video-container {
     overflow: hidden;
     position: relative;
@@ -8,13 +17,13 @@
     margin-right:auto;
 }
 
-.video-container::after {
+.video-container::after, .main-video-container::after{
     padding-top: 56.25%;
     display: block;
     content: '';
 }
 
-.video-container iframe {
+.video-container iframe, .main-video-container iframe{
     position: absolute;
     top: 0;
     left: 0;
