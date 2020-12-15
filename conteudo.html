@@ -43,7 +43,12 @@
             <img src="img/equacao1grau.jpg" alt="Equação do 1 grau">
             <img src="img/equacao1grau.gif" alt="Animação equação do primeiro grau">
             <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ylvb03POwGE?rel=0&showinfo=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+                    <img src="img/capa.jpg" style="cursor:pointer" />
+                </div>
+                <div style="display:none">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ylvb03POwGE?rel=0&showinfo=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
         <h2 id="eq2">Equações do 2° grau</h2>
