@@ -46,7 +46,7 @@ function resolver() {
         },
         grid: true,
         data: [{
-            fn: funcao, color: '#441111'
+            fn: funcao, color: '#661111'
         }]
     })
 }

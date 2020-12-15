@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/videos.css">
+    <link rel="stylesheet" href="css/conteudo.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono&family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 
@@ -24,9 +25,10 @@
         </nav>
         <div id="submenu" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="https://brasilescola.uol.com.br/matematica/equacao-1-o-grau-com-uma-incognita.htm">Site Equação de<br>1 grau</a>
-            <a href="https://brasilescola.uol.com.br/matematica/equacao-2-grau.htm">Site Equação de<br>2 grau</a>
-            <a href="https://www.educamaisbrasil.com.br/enem/matematica/funcoes-matematicas">Site de Funções</a>
+            <a href="https://brasilescola.uol.com.br/matematica/equacao-1-o-grau-com-uma-incognita.htm">Equação de 1 grau</a>
+            <a href="https://brasilescola.uol.com.br/matematica/equacao-2-grau.htm">Equação de 2 grau</a>
+            <a href="https://www.educamaisbrasil.com.br/enem/matematica/funcoes-matematicas">Introdução a<br>Funções</a>
+            <a href="https://www.educamaisbrasil.com.br/enem/matematica/funcao-de-segundo-grau">Função do 2 grau</a>
         </div>
     </header>
     <main>
@@ -37,24 +39,50 @@
             Uma equação do primeiro grau é uma equação que segue a forma <code>ax+b = 0</code>, sendo que <code>a</code> e <code>b</code> podem ser quaisquer números conhecidos ou expressões que resultem em um número conhecido, enquanto <code>x</code> é a incógnita que deve ter seu valor encontrado. Como é possível ver pela forma padrão da equação de primeiro grau, a incógnita pode ser multiplicada, dividida, subtraída e adicionada a qualquer número. Porém, não pode conter operações de potenciação ou radiciação aplicadas diretamente em <code>x</code>, pois isso muda o grau da equação.
         </p>
         <h3>Vídeo Explicativo</h3>
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ylvb03POwGE?rel=0&showinfo=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="container">
+            <img src="img/equacao1grau.jpg" alt="Equação do 1 grau">
+            <img src="img/equacao1grau.gif" alt="Animação equação do primeiro grau">
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ylvb03POwGE?rel=0&showinfo=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
         <h2 id="eq2">Equações do 2° grau</h2>
         <p>
             Uma equação do segundo grau é uma equação que segue a forma <code>ax^2 + bx + c = 0</code>, sendo <code>a</code>, <code>b</code> e <code>c</code>, números ou expressões conhecidas, enquanto <code>x</code> é a incógnita que deve ser encontrada. Assim como no primeiro grau, a incógnita pode realizar qualquer operação básica com números quaisquer, exceto potenciação e radiciação. Porém para ser considerada uma equação do segundo grau, deve possuir a incógnita elevada ao quadrado em algum lugar, ou seja <code>a</code> não pode ser 0.
         </p>
-        <img src="img/equacoes-bhaskara.gif">
         <h3>Vídeo Explicativo</h3>
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/iMTcN--jfHM?rel=0&showinfo=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="container">
+            <img src="img/equacoes-bhaskara.gif" alt="Animação de Bhaskara">
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/iMTcN--jfHM?rel=0&showinfo=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
         <h3>Fórmula de Bhaskara</h3>
-        <p>Como abordado no vídeo, precisamos da fórmula de bhaskara para a resolução:</p>
-        <img id="bhaskara" src="img/bhaskara.png">
-        <p>Veja como surgiu a fórmula de Bhaskara:</p>
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/xcaqcEkTKK4?rel=0&showinfo=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>Como abordado no vídeo, precisamos da fórmula de bhaskara para a resolução. Veja também como surgiu a fórmula de Bhaskara:</p>
+        <div class="container">
+            <img id="bhaskara" src="img/bhaskara.png" alt="bhaskara">
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/xcaqcEkTKK4?rel=0&showinfo=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <h2>Funções Matemáticas</h2>
+        <p>
+            As funções matemáticas, ao contrário das equações, que igualam a zero em suas formas simplificadas, agora é igualado a outra incógnita, representada geralmente por <code>f(x)</code> ou <code>y</code>. Assim como as equações, as funções podem ser de diferentes graus, de acordo com o valor ao qual <code>x</code> é elevado, portanto, uma função de primeiro grau seguirá a forma <code>f(x) = ax+b</code>, enquanto as funções de segundo grau seguem <code>f(x) = ax^2 + bx + c</code>. Podemos facilmente perceber que toda equação possui uma função equivalente, mas como as duas se associam?
+        </p>
+        <p>
+            As equações são usadas basicamente para encontrar o valor de <code>x</code> nos pontos onde <code>f(x) = 0</code>, que são chamados de <b>raízes</b> da função. Em contrapartida, as funções em si, determinam o seu valor em cada ponto em função de <code>x</code>, o que gera um gráfico como podemos ver exemplos abaixo:
+        </p>
+        <div class="container">
+            <div id="func1"><p><code>f(x) = 2x + 9</code></p></div>
+            <div id="func2"><p><code>f(x) = 2x^2 + 3x - 5</code></p></div>
+        </div>
+        <h3>Vídeo explicativo</h3>
+        <p>Veja nesse vídeo abaixo a diferença entre uma equação e uma função:</p>
+        <div class="container">
+            <img src="img/funcoes.png" alt="Relação Função">
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ayth0GjsCDM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
     </main>
     </div>
@@ -67,6 +95,8 @@
     </footer>
     <script src="js/toggle-dark.js"></script>
     <script src="js/sidenav.js"></script>
+    <script src="https://unpkg.com/function-plot/dist/function-plot.js"></script>
+    <script src="js/conteudo.js"></script>
 </body>
 
 </html>
