@@ -52,6 +52,16 @@ a{
     text-decoration: none;
 }
 
+.href {
+    color: #411;
+}
+.href:hover {
+    text-decoration: underline;
+}
+.dark-mode .href {
+    color: #f77;
+}
+
 code{
     background-color:#dddddd;
     font-family: 'Roboto Mono', monospace;
@@ -112,7 +122,7 @@ footer p {
     margin: 0;
 }
 footer a {
-    color:#555555;
+    color:#555555 !important;
 }
 footer a:hover {
     text-decoration: underline;

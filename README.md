@@ -6,8 +6,8 @@ Portal para auxílio com as matérias de equações do ensino médio.
 * Site em desenvolvimento. Pode ser acessado em https://pedenite.github.io/PILC-eq/
 * Levantamento de requisitos pode ser encontrado na pasta doc/
 
-- [ ] colocar informações sobre autores
-- [ ] adicionar mais funcionalidade menos tradicionais...
+- [x] colocar informações sobre autores.
+- [ ] Adicionar aplicações das equações.
 
 ## Disclaimer
 Foram utilizados softwares de terceiros com licença livre para uso e distribuição:

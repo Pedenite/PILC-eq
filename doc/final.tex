@@ -76,13 +76,23 @@ As equações são muito utilizadas no ensino fundamental (onde são ensinadas),
 \chapter{Problema}
 É comum atualmente muitos professores usarem metodologias tradicionais (onde o professor é o centro do processo de ensino aprendizagem), e isso acaba afetando todos os alunos que não conseguem se encaixar neste sistema. A tecnologia poderia auxiliar tanto os professores quanto os alunos, pois com o auxílio da tecnologia poderiam ser criadas muitas ferramentas para cada tipo de pessoa, alguns ferramentas com mais textos, imagens, vídeo aulas específicas, ou até mesmo jogos, questionários, etc.
 
-A dificuldade na resolução de equações ao longo do período escolar é natural e se torna presente em muitos alunos, que acabam por perder todo o interesse pela matéria, em especial quando não conseguem encontrar uma aplicabilidade para elas. A baixa capacidade de resolução de equações pode afetar negativamente o desempenho em matérias como física, química e a própria matemática, em que este conteúdo é usado o tempo todo e qualquer pequeno erro já faz com que o aluno perca toda uma questão. O projeto tem como finalidade, a descomplicação do conteúdo por meio de um \textit{website}.
+A dificuldade na resolução de equações ao longo do período escolar é natural e se torna presente em muitos alunos, que acabam por perder todo o interesse pela matéria, em especial quando não conseguem encontrar uma aplicabilidade para elas. A baixa capacidade de resolução de equações pode afetar negativamente o desempenho em matérias como física, química e a própria matemática, em que este conteúdo é usado o tempo todo e qualquer pequeno erro já faz com que o aluno perca toda uma questão. O projeto tem como finalidade, a descomplicação do conteúdo por meio de um \textit{website} onde o aluno possa encontrar os recursos necessários para o aprendizado efetivo da matéria.
+
+\chapter{Levantamento de Requisitos}
+Durante esta etapa, foi definido que seriam usadas as ferramentas HTML, CSS e Javascript para o desenvolvimento do portal, assim como foi definido que ele seria composto apenas de \textit{front-end} versionado no \href{https://github.com/Pedenite/PILC-eq}{github}, também sendo feito o \textit{deploy} por meio do \href{https://pedenite.github.io/PILC-eq/}{github-pages}. Foi analisado que o portal deveria ter como conteúdo, explicações da matéria considerando o público-alvo, que são jovens de 14 a 18 anos, exemplos de exercícios que variam desde os mais simples aos mais complexos e aplicações para proporcionar um entendimento melhor da matéria ao incluir gráficos e interdisciplinarizar com a física por exemplo e até coisas do mundo real.
+
+\section{Trabalhos Relacionados}
+Existem softwares na internet com uma proposta bem similar, como exemplo temos o \href{https://pt.symbolab.com/}{Symbolab} que permite que o usuário digite equações para que seja mostrada a solução detalhada passo a passo para o problema. Porém a ferramenta possui limitação no plano gratuito e não mostra todos os passos para a resolução, mas ela atende problemas mais avançados também como matérias estudadas no ensino superior.
+
+Outro exemplo de um trabalho é o photomath. Trata-se de um aplicativo para smartphones que permite ao usuário apontar a câmera do celular em uma equação matemática e ele assume a responsabilidade de resolver mostrando gráfico, passos para resolução, entre outros. O aplicativo, além de resolver os problemas básicos de equações, também resolve funções mais complexas assim como o site citado acima.
+
+A aplicação de interdisciplinaridade nos conteúdos de matemática já é usada há tempos em universidades em matérias como cálculo de forma a facilitar o entendimento e, principalmente fazer os alunos entenderem o "para quê" do conteúdo e não somente como resolver o problema, o que pode proporcionar um maior interesse pela matéria e fazer com que o conteúdo seja melhor fixado pelos alunos. Nosso objetivo é parecido neste sentido com a adição de ser um portal facilmente acessível pela internet para que qualquer um possa aprender.
 
 \chapter{Esboços das telas}
-O software em desenvolvimento é, de certa forma inspirado no \href{https://pt.symbolab.com/}{Symbolab} e no Photomath que são "calculadoras" avançadas que mostram a resolução passo a passo dos exercícios desde os mais simples até os mais avançados com até matérias do ensino superior. O portal será composto de uma \textit{home}, uma página com a explicação do conteúdo e outra com o modo de calculadora para a resolução de exercícios.
+O software desenvolvido é, de certa forma inspirado no \href{https://pt.symbolab.com/}{Symbolab} e no Photomath, como mencionado anteriormente, que são "calculadoras" avançadas que mostram a resolução passo a passo dos exercícios desde os mais simples até os mais avançados com até matérias do ensino superior. Ao esboçar as telas da aplicação, foi definido que o portal seria composto de pelo menos uma \textit{home}, uma página com a explicação do conteúdo e outra com o modo de calculadora para a resolução de exercícios.
 
 \section{Página inicial}
-A página principal do portal será bem simples, mostrando apenas uma introdução e detalhes sobre o projeto e um guia básico de utilização da aplicação, assim como links para as outras páginas. Também incluirá referências e informações dos autores como as de contato para que os estudantes possam conferir as fontes, assim como informar sobre erros na aplicação por e-mail, caso existam.
+A página principal do portal foi esboçada de forma bem simples, mostrando apenas uma introdução, detalhes sobre o projeto e um guia básico de utilização da aplicação, assim como links para as outras páginas. Também incluiria referências e informações dos autores como as de contato para que os estudantes possam conferir as fontes, assim como informar sobre erros na aplicação por e-mail, caso encontrem.
 
 \begin{figure}[H]
     \includegraphics[width=1\textwidth]{img/c.png}
@@ -90,24 +100,24 @@ A página principal do portal será bem simples, mostrando apenas uma introduç�
 \end{figure}
 
 \section{Exercícios}
-Uma segunda tela será a de exercícios e explicação do conteúdo e possuirá vídeos, gráficos, exemplos de problemas resolvidos com a opção de clicar em cima para mostrar o passo a passo da resolução da equação se o usuário quiser tentar resolver antes por si só, entre outros para a explicação do conteúdo. O portal é planejado para possuir também um "dark mode" para agradar a todo tipo de público que poderá ser ativado/desativado pelo botão na barra de navegação, porém não está no esboço e apenas atera a aparência do portal sem mudar as posições de nenhum elemento, apenas alterando o esquema de cores para mais escuros.
+A princípio, foi esboçada a segunda tela como de exercícios e explicação do conteúdo, possuindo vídeos, gráficos, exemplos de problemas resolvidos com a opção de clicar em cima para mostrar o passo a passo da resolução da equação se o usuário quiser tentar resolver antes por si só, entre outros. Já havia sido planejado para possuir um "dark mode" para agradar a todo tipo de público que podem ativar/desativar pelo botão na barra de navegação, que apesar de não estar no esboço, está presente na versão final e apenas atera a aparência do portal sem mudar as posições de nenhum elemento, alterando mesmo apenas o esquema de cores para mais escuros.
 
 \begin{figure}[H]
     \includegraphics[width=1\textwidth]{img/A.jpg}
     \caption{Esboço da tela de exercícios}
 \end{figure}
 
-Podemos ver um projeto de uma barra de navegação que manterá os links para outras páginas mais acessível, assim como incluir outras opções importantes também, como a opção do modo escuro.
+Podemos ver um projeto de uma barra de navegação para manter os links para outras páginas de forma mais acessível, assim como incluir outras opções importantes, como a opção do modo escuro.
 
 \section{Modo interativo}
-Por fim, teremos a última página que poderá ser acessada por um link disponível na barra de navegação e vai conter a seção de fazer os exercícios informados pelo usuário. A tela consistirá basicamente de um "input" de texto onde será informada uma equação e abaixo será mostrada a resposta ao clicar em um botão. É planejado de ser mostrado também o gráfico da equação que for informada para melhor visualização e entendimento.
+Por fim, teremos a última página que poderá ser acessada por um link disponível na barra de navegação e contém a seção de fazer os exercícios informados pelo usuário. O esboço consiste em basicamente um "input" de texto onde será informada uma equação e abaixo será mostrada a resposta ao clicar em um botão. Também é mostrado o gráfico da equação que for informada para melhor visualização e entendimento.
 
 \begin{figure}[H]
     \includegraphics[width=1\textwidth]{img/d.png}
     \caption{Esboço da tela tela de exercícios}
 \end{figure}
 
-O portal já está em desenvolvimento e poderá mudar com o tempo e até serem adicionadas novas páginas. O esboço atual é o básico do layout que o projeto seguirá. Para acessar a versão mais recente do portal, pode ser usado o seguinte link: \url{https://pedenite.github.io/PILC-eq/}.
+O portal foi finalizado o desenvolvimento e Foram adicionados novos recursos, assim como foi separada a página de conteúdo e exercícios. O esboço mostrado foi o básico do layout que o projeto seguiu.
 
 \chapter{Considerações}
 Podemos perceber que cada aluno possui sua maneira de estudar e assimilar os conteúdos passados e com o auxílio das ferramentas tecnológicas cada pessoa pode escolher uma que ajude a entender a matéria mais facilmente. O portal em desenvolvimento procura de certa forma, agradar a todo tipo de público, com um visual moderno e a opção de usar temas escuros, tudo para que o usuário sinta-se mais confortavel com a ferramenta, o que é importantíssimo para uma potencialidade no aprendizado.
