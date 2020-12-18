@@ -3,11 +3,8 @@ Atividade final de Projeto Interdisciplinar de Licenciatura em Computação UnB 
 
 Portal para auxílio com as matérias de equações do ensino médio.
 
-* Site em desenvolvimento. Pode ser acessado em https://pedenite.github.io/PILC-eq/
-* Levantamento de requisitos pode ser encontrado na pasta doc/
-
-- [x] colocar informações sobre autores.
-- [ ] Adicionar aplicações das equações.
+* Site publicado. Pode ser acessado em https://pedenite.github.io/PILC-eq/
+* Documentação encontra na pasta doc/
 
 ## Disclaimer
 Foram utilizados softwares de terceiros com licença livre para uso e distribuição:
